@@ -263,6 +263,30 @@ public class calculatrice {
                 textField1.setText(String.valueOf(ops));
             }
         });
+        btnBin.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+                int a = Integer.parseInt(textField1.getText());//Binary
+                textField1.setText(Integer.toString(a, 2));
+
+            }
+        });
+        btnOct.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+                int a = Integer.parseInt(textField1.getText());//Binary
+                textField1.setText(Integer.toString(a, 8));
+
+            }
+        });
+        btnHex.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+                int a = Integer.parseInt(textField1.getText());//Binary
+                textField1.setText(Integer.toString(a, 16));
+
+            }
+        });
     }
 
     public static void main(String[] arg) {
